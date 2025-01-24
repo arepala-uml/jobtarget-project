@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .job-detail {
+            margin-bottom: 15px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>{{ job.req_name }}</h2>
+        <div class="job-detail"><strong>Location:</strong> {{ job.location.city }}, {{ job.location.state }}</div>
+        <div class="job-detail"><strong>Status:</strong> {{ job.status }}</div>
+        <div class="job-detail"><strong>Description:</strong> {{ job.description }}</div>
+        <h3>Job Postings</h3>
+        <ul>
+            {% for posting in job.postings %}
+            <li>{{ posting.sitename }} - Duration: {{ posting.duration }} days</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Back to Job Listings</a>
+    </div>
+</body>
+</html>
