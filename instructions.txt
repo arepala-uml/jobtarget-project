@@ -1,0 +1,17 @@
+Create a web application in Python that does the following:
+ 
+API Layer:
+ 
+- Build a GET API Endpoint that returns all the jobs in the jobs.json file. 
+- Build a GET API Endpoint that returns a job from the jobs.json file based on a job id.
+ 
+Frontend Layer: 
+- index page: 
+	- The index page calls the GET all jobs endpoint from the api layer and displays the data on a table.
+	- The job name should be a link to the details page. 
+- details page: 
+	- The details page calls the GET job by id endpoint from the api layer and displays the data on the page.
+	- The details page has a link to go back to the index page.
+
+Please provide us with a github or gitlab link to the code repository you have created by end of day on Monday, Jan 20th.
+Your repo should have a README with both setup instructions and a short couple lines on what steps you'd take to make it production ready (deployment to the cloud)
