@@ -9,6 +9,7 @@ The frontend fetches data from the backend using REST API endpoints.
 - [Prerequisites](#prerequisites)
 - [Backend Installation](#backend-installation)
 - [Frontend Installation](#frontend-installation)
+- [Backend & Frontend Installation Using Docker](#docker-installation)
 
 ## Prerequisites
 
@@ -138,3 +139,33 @@ Follow these steps to create and activate a virtual environment for the backend 
   npm start
   ```
   The frontend will be available at `http://localhost:3000`.
+
+## Installation Using Docker (optional)
+
+Dont follow the below steps if you have already followed the Backend and Frontend installation.
+Please do the below steps if you want to deploy as containerized applications.
+
+### Prerequisites
+Before you start, you need to have the following software installed:
+
+#### Step 1: Installation of docker if not exists
+  * On macOS:
+    Install Docker Desktop from [here](https://www.docker.com/products/docker-desktop).
+    
+  * On Windows:
+    Install Docker Desktop from [here](https://www.docker.com/products/docker-desktop).
+    
+#### Step 2: Check for docker and docker-compose version
+  After installing, check for version
+  ```
+  docker --version
+  docker-compose --verison
+  ```
+#### Step 3: Bring up the frontend and backend application
+  ```
+  docker-compose down
+  docker-compose up -d
+  ```
+  Access the application at `http://localhost:3000`
+
+
