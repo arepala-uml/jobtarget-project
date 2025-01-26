@@ -11,5 +11,4 @@ COPY server/ /app/
 # Use Gunicorn to run the Flask app with 4 workers
 ENTRYPOINT ["gunicorn"]
 
-# Specify the location of your Flask app and the number of workers
 CMD ["-w", "4", "app:app", "--bind", "0.0.0.0:8000"]
