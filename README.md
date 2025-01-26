@@ -10,7 +10,7 @@ The frontend fetches data from the backend using REST API endpoints.
 - [Backend Installation](#backend-installation)
 - [Frontend Installation](#frontend-installation)
 - [Installation Using Docker](#installation-using-docker)
-- [Steps To Make Produciton Ready](#steps-to-make-production-ready)
+- [Steps To Make Production Ready](#steps-to-make-production-ready)
 
 ## Prerequisites
 
@@ -135,11 +135,11 @@ Follow these steps to create and activate a virtual environment for the backend 
 
 
 #### Step 4: Start the React Development Server
-  Run the React frontend development server:
-  ```
-  npm start
-  ```
-  The frontend will be available at `http://localhost:3000`.
+Run the React frontend development server:
+```
+npm start
+```
+The frontend will be available at `http://localhost:3000`.
 
 ## Installation Using Docker
 
@@ -169,15 +169,15 @@ Before you start, you need to have the following software installed:
   ```
   Access the application at `http://localhost:3000`
 
-## Steps To Make Produciton Ready
-To make this application production-ready, we should implement below things:
-
-* For persistent data storage, we need to integrate a relational (Ex: MySQL) or NoSQL database (Ex: MongoDB) to replace the static jobs.json file, enabling dynamic data handling and 
-  scalability.
-* Need to have secure communication by enforcing HTTPS for both frontend and backend, using SSL/TLS certificates.
-* We need to containerize our application to make it production ready and I already did that in this project. But, I did not configure the supervisord and we need to have this because 
-  it ensures that all services run smoothly and automatically restart in case of failures.
-* We need to deploy the application in scalable environments like Kubernetes with auto-scaling to handle varying traffic loads.
-* We need to have automated CI/CD pipelines using Jenkins to automate process of build,test and deploy of our app.
-* We need to write unit tests for both the frontend and backend to ensure the correctness of individual components using modules like pytest.
-* We need to have TypeScript into the React frontend for better type safety and easily can identify type errors during development.
+## Steps To Make Production Ready
+  To make this application production-ready, we should implement below things:
+  
+  * For persistent data storage, we need to integrate a relational (Ex: MySQL) or NoSQL database (Ex: MongoDB) to replace the static jobs.json file, enabling dynamic data handling and 
+    scalability.
+  * Need to have secure communication by enforcing HTTPS for both frontend and backend, using SSL/TLS certificates.
+  * We need to containerize our application to make it production ready and I already did that in this project. But, I did not configure the supervisord and we need to have this because 
+    it ensures that all services run smoothly and automatically restart in case of failures.
+  * We need to deploy the application in scalable environments like Kubernetes with auto-scaling to handle varying traffic loads.
+  * We need to have automated CI/CD pipelines using Jenkins to automate process of build,test and deploy of our app.
+  * We need to write unit tests for both the frontend and backend to ensure the correctness of individual components using modules like pytest.
+  * We need to have TypeScript into the React frontend for better type safety and easily can identify type errors during development.
