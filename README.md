@@ -77,7 +77,6 @@ Follow these steps to create and activate a virtual environment for the backend 
 
   #### Run flask for develop
   ```
-  cd server/
   python app.py
   ```
   In flask, Default port is `5000`
@@ -88,7 +87,6 @@ Follow these steps to create and activate a virtual environment for the backend 
   ** Run with gunicorn **
   
   ```
-  cd server/
   gunicorn -w 4 app:app
   
   ```
