@@ -25,7 +25,7 @@ Before you begin, make sure you have the following software installed on your sy
 Clone the repository to your local machine:
 
   ```
-  git clone https://github.com/your-username/job-target.git
+  git clone https://github.com/arepala-uml/jobtarget-project
   ```
 Move to the project directory:
   ```
