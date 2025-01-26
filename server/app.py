@@ -13,7 +13,9 @@ app = Flask(__name__)
 CORS(app)
 port = int(os.getenv("FLASK_APP_PORT", 5000))
 
-with open('jobs.json', 'r') as file:
+base_path = os.path.dirname(os.path.abspath(__file__))
+jobs_file_path = os.path.join(base_path, 'jobs.json')
+with open(jobs_file_path, 'r') as file:
     jobs_data = json.load(file)
 
 @app.route('/api/jobs', methods=['GET'])
