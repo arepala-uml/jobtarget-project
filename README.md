@@ -9,7 +9,8 @@ The frontend fetches data from the backend using REST API endpoints.
 - [Prerequisites](#prerequisites)
 - [Backend Installation](#backend-installation)
 - [Frontend Installation](#frontend-installation)
-- [Backend & Frontend Installation Using Docker](#docker-installation)
+- [Installation Using Docker](#installation-using-docker)
+- [Steps To Make It Produciton Ready](#steps-to-production)
 
 ## Prerequisites
 
@@ -140,7 +141,7 @@ Follow these steps to create and activate a virtual environment for the backend 
   ```
   The frontend will be available at `http://localhost:3000`.
 
-## Installation Using Docker (optional)
+## Installation Using Docker
 
 Dont follow the below steps if you have already followed the Backend and Frontend installation.
 Please do the below steps if you want to deploy as containerized applications.
