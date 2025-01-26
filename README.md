@@ -36,7 +36,6 @@ Follow these steps to create and activate a virtual environment for the backend 
 
 1. #### Navigate to the server/ folder:
     ```
-    
     cd server
     ```
 2. #### Create a virtual environment (this is done only once)
