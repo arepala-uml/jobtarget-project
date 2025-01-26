@@ -112,6 +112,7 @@ Follow these steps to create and activate a virtual environment for the backend 
 #### Step 1: Navigate to Frontend Folder
   Navigate to the `ui/` directory
   ```
+  cd jobtarget-project/
   cd ui/
   ```
 
