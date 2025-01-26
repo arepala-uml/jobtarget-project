@@ -29,7 +29,7 @@ Clone the repository to your local machine:
   ```
 Move to the project directory:
   ```
-  cd job-target
+  cd jobtarget-project
   ```
 ### Step 2: Set Up the Virtual Environment
 Follow these steps to create and activate a virtual environment for the backend server:
