@@ -87,8 +87,7 @@ Follow these steps to create and activate a virtual environment for the backend 
   ** Run with gunicorn **
   
   ```
-  gunicorn -w 4 app:app
-  
+  gunicorn -w 4 --bind 0.0.0.0:5000 app:app
   ```
   * -w : number of worker
 
