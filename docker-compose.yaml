@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "8000:8000"  # Use the port defined in the environment variables or supervisor config
+    environment:
+      - FLASK_APP_PORT=8000
+    networks:
+      - jobtarget-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_HOST=backend
+      - REACT_APP_BACKEND_PORT=8000
+    networks:
+      - jobtarget-network
+
+networks:
+  jobtarget-network:
+    driver: bridge
