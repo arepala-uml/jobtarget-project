@@ -9,7 +9,7 @@ The frontend fetches data from the backend using REST API endpoints.
 - [Prerequisites](#prerequisites)
 - [Backend Installation](#backend-installation)
 - [Frontend Installation](#frontend-installation)
-- [Installation Using Docker](#installation-using-docker)
+- [Installation Using Docker(optional)](#installation-using-docker-optional)
 - [Steps To Make Production Ready](#steps-to-make-production-ready)
 
 ## Prerequisites
@@ -99,6 +99,10 @@ Follow these steps to create and activate a virtual environment for the backend 
   ```
   The backend will be available at above link (or the port you’ve specified in .env)
 
+  To get all the jobs `http://localhost:8000/api/jobs`
+  
+  To get a jobs with <job_id> `http://localhost:8000/api/jobs/<job_id>`
+
 
 ## Frontend Installation
 
@@ -132,7 +136,7 @@ npm start
 ```
 The frontend will be available at `http://localhost:3000`.
 
-## Installation Using Docker
+## Installation Using Docker (optional)
 
 Dont follow the below steps if you have already followed the Backend and Frontend installation.
 Please do the below steps if you want to deploy as containerized applications.
