@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file and get port value
 load_dotenv()
-port = int(os.getenv("FLASK_APP_PORT", 5000))
+port = int(os.getenv("FLASK_APP_PORT", 8000))
 
 # Set up logging configuration
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
