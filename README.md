@@ -71,7 +71,7 @@ Follow these steps to create and activate a virtual environment for the backend 
   3. #### Set the desired port in the .env file:
 
   ```
-  FLASK_APP_PORT=5000  # Default port assigned is 8000, you can change it here
+  FLASK_APP_PORT=8000  # Default port assigned is 8000, you can change it here
   ```
    If you don’t modify the .env file, the backend will use the default port 8000.
 
