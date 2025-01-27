@@ -120,7 +120,7 @@ Follow these steps to create and activate a virtual environment for the backend 
   Open `.env` file in the ui/ folder to specify the backend hostname and port:
   ```
   REACT_APP_BACKEND_HOST=localhost
-  REACT_APP_BACKEND_PORT=5000  # Default is 5000, you can change it here to match your backend
+  REACT_APP_BACKEND_PORT=8000  # Default is 8000, you can change it here to match your backend
   ```
   This will allow the React app to communicate with the backend on the port you’ve specified.
 
