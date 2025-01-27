@@ -167,12 +167,12 @@ Before you start, you need to have the following software installed:
 ## Steps To Make Production Ready
   To make this application production-ready, we should implement below things:
   
-  * For persistent data storage, we need to integrate a relational (Ex: MySQL) or NoSQL database (Ex: MongoDB) to replace the static jobs.json file, enabling dynamic data handling and 
-    scalability.
+  * For persistent data storage, we need to integrate a relational (Ex: MySQL) or NoSQL database (Ex: MongoDB) to replace the static jobs.json file.
   * Need to have secure communication by enforcing HTTPS for both frontend and backend, using SSL/TLS certificates.
-  * We need to containerize our application to make it production ready and I already did that in this project. But, I did not configure the supervisord and we need to have this because 
-    it ensures that all services run smoothly and automatically restart in case of failures.
+  * We need to containerize our application to make it production ready and I already did that in this project. But, I did not configure the supervisord and we need to have this 
+    because it ensures that all services run smoothly and automatically restart in case of failures.
   * We need to deploy the application in scalable environments like Kubernetes with auto-scaling to handle varying traffic loads.
   * We need to have automated CI/CD pipelines using Jenkins to automate process of build,test and deploy of our app.
+  * We need to have proper monitoring of the application like using tools like Prometheus, Grafana.
   * We need to write unit tests for both the frontend and backend to ensure the correctness of individual components using modules like pytest.
   * We need to have TypeScript into the React frontend for better type safety and easily can identify type errors during development.
