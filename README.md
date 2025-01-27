@@ -63,7 +63,7 @@ Follow these steps to create and activate a virtual environment for the backend 
     This will install all the dependencies required for backend server.
 
 ### Step 3: Configure the Flask Backend Port
-  By default, the Flask backend will run on port 5000. If you want to change the port, you can specify the new port in the .env file.
+  By default, the Flask backend will run on port 8000. If you want to change the port, you can specify the new port in the .env file.
 
   #### Steps to change the port:
   1. #### Navigate to the server/ folder.
