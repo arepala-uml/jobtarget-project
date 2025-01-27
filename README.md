@@ -71,9 +71,9 @@ Follow these steps to create and activate a virtual environment for the backend 
   3. #### Set the desired port in the .env file:
 
   ```
-  FLASK_APP_PORT=5000  # Default is 5000, you can change it here
+  FLASK_APP_PORT=5000  # Default port assigned is 8000, you can change it here
   ```
-   If you don’t modify the .env file, the backend will use the default port 5000.
+   If you don’t modify the .env file, the backend will use the default port 8000.
 
 ### Step 4: Run the Flask Server
 
@@ -81,7 +81,7 @@ Follow these steps to create and activate a virtual environment for the backend 
   ```
   python app.py
   ```
-  In flask, Default port is `5000`
+  In flask, Default port is set to `8000`
 
 
  #### Run flask for production
@@ -89,22 +89,13 @@ Follow these steps to create and activate a virtual environment for the backend 
   ** Run with gunicorn **
   
   ```
-  gunicorn -w 4 --bind 0.0.0.0:5000 app:app
+  gunicorn -w 4 --bind 0.0.0.0:8000 app:app
   ```
   * -w : number of worker
-
-  #### Run with Docker
-
-  ```
-   docker build -t flask-example
-   docker run -p 5000:5000 --name flask-example flask-example 
-   
-  ```
-  In image building, the server folder will also add into the image
     
 ### Step 5: Access the flask backend server
   ```
-  http://localhost:5000
+  http://localhost:8000
   ```
   The backend will be available at above link (or the port you’ve specified in .env)
 
@@ -160,7 +151,7 @@ Before you start, you need to have the following software installed:
   After installing, check for version
   ```
   docker --version
-  docker-compose --verison
+  docker-compose --version
   ```
 #### Step 3: Bring up the frontend and backend application
   ```
